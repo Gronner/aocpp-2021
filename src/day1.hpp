@@ -2,4 +2,4 @@
 
 #include <vector>
 
-unsigned int sonar_sweep(std::vector<unsigned int> scans, size_t window);
+unsigned int sonar_sweep(const std::vector<unsigned int>& scans, std::ptrdiff_t window);
