@@ -5,7 +5,7 @@
 #include "day1.hpp"
 
 TEST(Day1Test, SampleInput) {
-    std::vector<unsigned int> input_data = {
+    constexpr std::array<unsigned int, 10> input_data = {
         199,
         200,
         208,
@@ -17,12 +17,11 @@ TEST(Day1Test, SampleInput) {
         260,
         263,
     };
-    ASSERT_EQ(7, sonar_sweep(input_data, 1));
-    ASSERT_EQ(5, sonar_sweep(input_data, 3));
+    ASSERT_EQ(7, day1::sonar_sweep(input_data, 1));
+    ASSERT_EQ(5, day1::sonar_sweep(input_data, 3));
 }
 
 TEST(Day1Test, RiddleInput) {
-    auto input_data = aoc::read_input_tokenwise<unsigned int>(day1_data);
-    ASSERT_EQ(1215, sonar_sweep(input_data, 1));
-    ASSERT_EQ(1150, sonar_sweep(input_data, 3));
+    ASSERT_EQ(1215, day1::sonar_sweep(day1::input, 1));
+    ASSERT_EQ(1150, day1::sonar_sweep(day1::input, 3));
 }

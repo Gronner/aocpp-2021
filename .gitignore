@@ -32,3 +32,7 @@
 *.app
 build
 compile_commands.json
+
+# Custom
+.cache
+.ccls-cache

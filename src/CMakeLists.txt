@@ -7,7 +7,6 @@ set(SOURCES
     main.cpp
     aoc_input.cpp
     parsing.cpp
-    day1.cpp
     day2.cpp
     )
 
